@@ -12,12 +12,12 @@ collection rather than reuse its record only has to put the file back where the 
 
 | collection | tokens | what it is | where it came from |
 | --- | ---: | --- | --- |
-| `wiki:ja` | 127,281,526 | Japanese Wikipedia, first 150,000 articles, read aloud | [jawiki.xml.bz2](https://dumps.wikimedia.org/jawiki/latest/jawiki-latest-pages-articles.xml.bz2) |
-| `fw2` | 74,903,591 | FineWeb-2 jpn_Jpan — the crawled web, each document citing its own URL | [fineweb2-jpn.parquet](https://huggingface.co/datasets/HuggingFaceFW/fineweb-2/resolve/main/data/jpn_Jpan/train/000_00000.parquet) |
-| `wikisource:ja` | 18,975,874 | Japanese Wikisource — same Wikimedia family, so it corroborates rather than counts | [jawikisource.xml.bz2](https://dumps.wikimedia.org/jawikisource/latest/jawikisource-latest-pages-articles.xml.bz2) |
-| `ia` | 3,764,920 | Internet Archive japanese books — literature, and the register a newspaper never reaches | [archive-ja](https://archive.org/details/booksbylanguage_japanese) |
-| `tat` | 700,133 | Tatoeba Japanese — contemporary and conversational | [jpn_sentences.tsv](https://downloads.tatoeba.org/exports/per_language/jpn/jpn_sentences.tsv.bz2) |
-| `gut` | 284,902 | Project Gutenberg Japanese — a small shelf, but its own family | [gutenberg-ja](https://www.gutenberg.org/cache/epub/feeds/pg_catalog.csv) |
+| `wiki:ja` | 127,281,526 |  | — |
+| `fw2` | 74,903,591 |  | — |
+| `wikisource:ja` | 18,975,874 |  | — |
+| `ia` | 13,204,546 | Internet Archive japanese books — literature, and the register a newspaper never reaches | [archive-ja](https://archive.org/details/booksbylanguage_japanese) |
+| `tat` | 700,133 |  | — |
+| `gut` | 284,902 |  | — |
 | `web:yomiuri.co.jp` | 208,901 |  | fetched from `yomiuri.co.jp`, recorded in `searched.tsv` |
 | `web:asahi.com` | 79,081 |  | fetched from `asahi.com`, recorded in `searched.tsv` |
 | `web:chunichi.co.jp` | 74,750 |  | fetched from `chunichi.co.jp`, recorded in `searched.tsv` |

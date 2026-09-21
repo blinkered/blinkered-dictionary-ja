@@ -2,11 +2,11 @@
   "language": "ja",
   "built": "2026-09-21",
   "candidates": 191188,
-  "shipped": 34636,
+  "shipped": 39058,
   "conforms": true,
   "families": 13,
   "checkable": 12,
-  "knee": 5,
+  "knee": 4,
   "steps": [
     {
       "families": 1,
@@ -25,78 +25,78 @@
     {
       "families": 3,
       "added": "internetarchive",
-      "kept": 30594,
-      "share": 0.160021,
-      "gained": 30594
+      "kept": 36801,
+      "share": 0.192486,
+      "gained": 36801
     },
     {
       "families": 4,
       "added": "tatoeba",
-      "kept": 33476,
-      "share": 0.175095,
-      "gained": 2882
+      "kept": 38391,
+      "share": 0.200802,
+      "gained": 1590
     },
     {
       "families": 5,
       "added": "gutenberg",
-      "kept": 34578,
-      "share": 0.180859,
-      "gained": 1102
+      "kept": 39029,
+      "share": 0.204139,
+      "gained": 638
     },
     {
       "families": 6,
       "added": "yomiuri.co.jp",
-      "kept": 34605,
-      "share": 0.181,
-      "gained": 27
+      "kept": 39044,
+      "share": 0.204218,
+      "gained": 15
     },
     {
       "families": 7,
       "added": "hokkaido-np.co.jp",
-      "kept": 34617,
-      "share": 0.181063,
-      "gained": 12
+      "kept": 39050,
+      "share": 0.204249,
+      "gained": 6
     },
     {
       "families": 8,
-      "added": "sankei.com",
-      "kept": 34623,
-      "share": 0.181094,
-      "gained": 6
+      "added": "chunichi.co.jp",
+      "kept": 39054,
+      "share": 0.20427,
+      "gained": 4
     },
     {
       "families": 9,
       "added": "asahi.com",
-      "kept": 34629,
-      "share": 0.181125,
-      "gained": 6
+      "kept": 39057,
+      "share": 0.204286,
+      "gained": 3
     },
     {
       "families": 10,
-      "added": "chunichi.co.jp",
-      "kept": 34633,
-      "share": 0.181146,
-      "gained": 4
+      "added": "sankei.com",
+      "kept": 39058,
+      "share": 0.204291,
+      "gained": 1
     },
     {
       "families": 11,
       "added": "tokyo-np.co.jp",
-      "kept": 34636,
-      "share": 0.181162,
-      "gained": 3
+      "kept": 39058,
+      "share": 0.204291,
+      "gained": 0
     },
     {
       "families": 12,
       "added": "nikkei.com",
-      "kept": 34636,
-      "share": 0.181162,
+      "kept": 39058,
+      "share": 0.204291,
       "gained": 0
     },
     {
       "families": 13,
       "added": "mainichi.jp",
-      "kept": 34636,
-      "share": 0.181162,
+      "kept": 39058,
+      "share": 0.204291,
       "gained": 0
     }
   ]

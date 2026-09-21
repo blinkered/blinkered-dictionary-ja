@@ -8,7 +8,7 @@ the curve a careful builder would get, not the order this repository happens to 
 The first two families keep nothing, which is not padding — it is the shape of a rule that needs
 three independent sources.
 
-Candidates: 191,188. Shipped: 34,636.
+Candidates: 191,188. Shipped: 39,058.
 
 Of 13 families, **12 can be checked by fetching** —
 a stable identifier or a page we fetched ourselves. The other 1 are crawls
@@ -19,16 +19,16 @@ it is their published corpus, not the web.
 | --- | --- | --- | --- | --- |
 | 1 | `wikimedia` | 0 | 0.0% | — |
 | 2 | `commoncrawl` | 0 | 0.0% | — |
-| 3 | `internetarchive` | 30,594 | 16.0% | +30,594 |
-| 4 | `tatoeba` | 33,476 | 17.5% | +2,882 |
-| 5 | `gutenberg` | 34,578 | 18.1% | +1,102 |
-| 6 | `yomiuri.co.jp` | 34,605 | 18.1% | +27 |
-| 7 | `hokkaido-np.co.jp` | 34,617 | 18.1% | +12 |
-| 8 | `sankei.com` | 34,623 | 18.1% | +6 |
-| 9 | `asahi.com` | 34,629 | 18.1% | +6 |
-| 10 | `chunichi.co.jp` | 34,633 | 18.1% | +4 |
-| 11 | `tokyo-np.co.jp` | 34,636 | 18.1% | +3 |
-| 12 | `nikkei.com` | 34,636 | 18.1% | — |
-| 13 | `mainichi.jp` | 34,636 | 18.1% | — |
+| 3 | `internetarchive` | 36,801 | 19.2% | +36,801 |
+| 4 | `tatoeba` | 38,391 | 20.1% | +1,590 |
+| 5 | `gutenberg` | 39,029 | 20.4% | +638 |
+| 6 | `yomiuri.co.jp` | 39,044 | 20.4% | +15 |
+| 7 | `hokkaido-np.co.jp` | 39,050 | 20.4% | +6 |
+| 8 | `chunichi.co.jp` | 39,054 | 20.4% | +4 |
+| 9 | `asahi.com` | 39,057 | 20.4% | +3 |
+| 10 | `sankei.com` | 39,058 | 20.4% | +1 |
+| 11 | `tokyo-np.co.jp` | 39,058 | 20.4% | — |
+| 12 | `nikkei.com` | 39,058 | 20.4% | — |
+| 13 | `mainichi.jp` | 39,058 | 20.4% | — |
 
-**Diminishing returns from family 5** (`gutenberg`, +1,102), where a family first added less than a twentieth of what the best one did.
+**Diminishing returns from family 4** (`tatoeba`, +1,590), where a family first added less than a twentieth of what the best one did.
