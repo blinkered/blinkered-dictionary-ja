@@ -127,6 +127,12 @@ writeFileSync(
       ships: blessing.ships === true,
       decided: blessing.decided ?? null,
       why: blessing.why ?? null,
+      // What the shipped list is under. Carried forward like the blessing, for the same reason:
+      // a build must not be able to decide a language's terms. Null rather than omitted, because
+      // that is what the importer in `blinkered` reads, and it treats null and absent alike —
+      // either way it writes no terms and reports the language as undeclared rather than
+      // guessing one.
+      license: blessing.license ?? null,
       // Whether this repository's list said only what its evidence supported at the moment the
       // curve was measured. It travels with the curve so that a reader of status.json alone —
       // the roll-up, the chart, anyone — never has to take the number on trust.
