@@ -8,7 +8,7 @@
  * Families are added best-first, so the curve shows the shape a careful builder would get rather
  * than the shape this repository's `sources.mjs` happened to produce.
  */
-import { readFileSync, writeFileSync } from 'node:fs'
+import { existsSync, readFileSync, writeFileSync } from 'node:fs'
 import {
   checkabilityOf,
   conform,
@@ -98,20 +98,37 @@ ${
 `,
 )
 
+// Whether anybody blessed this list to ship, which is the one thing in this file that is not
+// measured. Conforming says the evidence is sound and Blinkered's own floor says the list deals a
+// playable board; neither says anybody wants to ship it.
+//
+// It is carried forward rather than computed, because a build must never be able to bless a
+// language or to withdraw one. **Absence means no**: a fresh clone, a deleted file or a brand new
+// language starts unblessed and has to be blessed on purpose.
+const blessing = existsSync('status.json')
+  ? JSON.parse(readFileSync('status.json', 'utf8'))
+  : existsSync('ships.json')
+    ? JSON.parse(readFileSync('ships.json', 'utf8'))
+    : {}
+
 // The same curve as machine-readable data, so the roll-up in `blinkered-attestation` can pull it
 // from this repository's main branch rather than re-reading sixty megabytes of evidence. This
-// file is the published form of the measurement: small, stable, and the only thing the chart
-// needs.
+// file is the published form of the measurement: small, stable, and everything the chart and the
+// roll-up need in one fetch, which is why the blessing lives here too rather than in a second
+// file they would have to fetch separately and could disagree with.
 writeFileSync(
-  'curve.json',
+  'status.json',
   `${JSON.stringify(
     {
       language: LANGUAGE,
       built: evidence.built,
       candidates: total,
       shipped,
+      ships: blessing.ships === true,
+      decided: blessing.decided ?? null,
+      why: blessing.why ?? null,
       // Whether this repository's list said only what its evidence supported at the moment the
-      // curve was measured. It travels with the curve so that a reader of curve.json alone —
+      // curve was measured. It travels with the curve so that a reader of status.json alone —
       // the roll-up, the chart, anyone — never has to take the number on trust.
       conforms: conform(list, evidence).length === 0,
       families: steps.length,
@@ -131,7 +148,8 @@ writeFileSync(
 )
 
 process.stderr.write(
-  `${LANGUAGE}: ${String(steps.length)} families, wrote SATURATION.md and curve.json\n`,
+  `${LANGUAGE}: ${String(steps.length)} families, wrote SATURATION.md and status.json` +
+    `${blessing.ships === true ? '' : ' (this language does not ship)'}\n`,
 )
 for (const step of steps) {
   process.stderr.write(
