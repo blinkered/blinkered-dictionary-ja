@@ -1,0 +1,8 @@
+node_modules/
+
+# Downloaded collections. Regenerable, enormous, and the reason this repository stays small:
+# only the evidence, the list and the drop list are ever tracked.
+.cache/
+
+# A running harvest's marker. Says a build must not read searched.tsv yet.
+searched.tsv.harvesting

@@ -1,0 +1,16 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      '@blinkered/attestation':
+        specifier: link:../blinkered-attestation
+        version: link:../blinkered-attestation
+      '@blinkered/engine':
+        specifier: link:../blinkered/packages/engine
+        version: link:../blinkered/packages/engine

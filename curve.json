@@ -1,0 +1,103 @@
+{
+  "language": "ja",
+  "built": "2026-09-21",
+  "candidates": 191188,
+  "shipped": 34636,
+  "conforms": true,
+  "families": 13,
+  "checkable": 12,
+  "knee": 5,
+  "steps": [
+    {
+      "families": 1,
+      "added": "wikimedia",
+      "kept": 0,
+      "share": 0,
+      "gained": 0
+    },
+    {
+      "families": 2,
+      "added": "commoncrawl",
+      "kept": 0,
+      "share": 0,
+      "gained": 0
+    },
+    {
+      "families": 3,
+      "added": "internetarchive",
+      "kept": 30594,
+      "share": 0.160021,
+      "gained": 30594
+    },
+    {
+      "families": 4,
+      "added": "tatoeba",
+      "kept": 33476,
+      "share": 0.175095,
+      "gained": 2882
+    },
+    {
+      "families": 5,
+      "added": "gutenberg",
+      "kept": 34578,
+      "share": 0.180859,
+      "gained": 1102
+    },
+    {
+      "families": 6,
+      "added": "yomiuri.co.jp",
+      "kept": 34605,
+      "share": 0.181,
+      "gained": 27
+    },
+    {
+      "families": 7,
+      "added": "hokkaido-np.co.jp",
+      "kept": 34617,
+      "share": 0.181063,
+      "gained": 12
+    },
+    {
+      "families": 8,
+      "added": "sankei.com",
+      "kept": 34623,
+      "share": 0.181094,
+      "gained": 6
+    },
+    {
+      "families": 9,
+      "added": "asahi.com",
+      "kept": 34629,
+      "share": 0.181125,
+      "gained": 6
+    },
+    {
+      "families": 10,
+      "added": "chunichi.co.jp",
+      "kept": 34633,
+      "share": 0.181146,
+      "gained": 4
+    },
+    {
+      "families": 11,
+      "added": "tokyo-np.co.jp",
+      "kept": 34636,
+      "share": 0.181162,
+      "gained": 3
+    },
+    {
+      "families": 12,
+      "added": "nikkei.com",
+      "kept": 34636,
+      "share": 0.181162,
+      "gained": 0
+    },
+    {
+      "families": 13,
+      "added": "mainichi.jp",
+      "kept": 34636,
+      "share": 0.181162,
+      "gained": 0
+    }
+  ]
+}
