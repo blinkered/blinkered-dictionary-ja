@@ -1,0 +1,11 @@
+{
+  "ships": false,
+  "decided": "2026-09-21",
+  "decidedBy": "operator",
+  "at": {
+    "words": 39058,
+    "candidates": 191188,
+    "coverage": 0.204
+  },
+  "why": "Held back. It clears the usability floor, so nothing mechanical would stop it; this is an editorial decision and that is the point of this file. Its reader cannot produce compound words at all — SudachiDict-small has no compound entries, so Sudachi's longest-unit mode has nothing to join — and Japanese vocabulary is largely compounds. More books will not fix it. The fix is measured and recorded in blinkered-attestation/STATUS.md and needs every Japanese collection read again."
+}
