@@ -19,9 +19,15 @@ import {
 } from '@blinkered/attestation'
 import { LANGUAGE, SOURCES, HARVEST, COMMON_CUT } from './sources.mjs'
 
+// The candidates live in `blinkered-attestation`, not in `blinkered`. They used to be read from
+// the game's own data directory, and then the game started borrowing its lists back from these
+// repositories — which put an attested words.txt at exactly this path. German's candidate list
+// became German's own output, and a build reading it would have reported 100% coverage with an
+// empty drop list and no error at all. The guard below catches that; this path is why it no
+// longer has to.
 const CANDIDATES =
   process.env.CANDIDATES ??
-  `/Users/nick/work/tightline/blinkered/packages/words/data/${LANGUAGE}/words.txt`
+  new URL(`../blinkered-attestation/candidates/${LANGUAGE}/words.txt`, import.meta.url).pathname
 
 // A harvest of this language appends to `searched.tsv` for hours. Reading it mid-append gives a
 // page some of its words and not others, which no check downstream would catch. If a harvest was

@@ -52,7 +52,7 @@ if (urls.length === 0) throw new Error('usage: node chase.mjs <url>… | --file 
 
 const CANDIDATES =
   process.env.CANDIDATES ??
-  `/Users/nick/work/tightline/blinkered/packages/words/data/${LANGUAGE}/words.txt`
+  new URL(`../blinkered-attestation/candidates/${LANGUAGE}/words.txt`, import.meta.url).pathname
 
 const candidates = new Set(
   readFileSync(CANDIDATES, 'utf8')

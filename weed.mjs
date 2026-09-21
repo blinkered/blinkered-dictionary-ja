@@ -34,7 +34,7 @@ const fold = alphabetFor(LANGUAGE).fold
 const candidates = new Set(
   readFileSync(
     process.env.CANDIDATES ??
-      `/Users/nick/work/tightline/blinkered/packages/words/data/${LANGUAGE}/words.txt`,
+      new URL(`../blinkered-attestation/candidates/${LANGUAGE}/words.txt`, import.meta.url).pathname,
     'utf8',
   )
     .split('\n')

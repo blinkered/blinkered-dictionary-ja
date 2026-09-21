@@ -46,7 +46,7 @@ const perDomain = Number(process.argv[2] ?? 300)
 
 const CANDIDATES =
   process.env.CANDIDATES ??
-  `/Users/nick/work/tightline/blinkered/packages/words/data/${LANGUAGE}/words.txt`
+  new URL(`../blinkered-attestation/candidates/${LANGUAGE}/words.txt`, import.meta.url).pathname
 
 const candidates = new Set(
   readFileSync(CANDIDATES, 'utf8')
