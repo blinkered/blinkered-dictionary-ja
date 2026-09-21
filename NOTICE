@@ -1,0 +1,42 @@
+Blinkered attestation — 日本語 (ja)
+Copyright 2026 Tight Line LLC
+
+Licensed under the Apache License, Version 2.0. See LICENSE.
+
+Three different sets of terms apply to three different kinds of thing in this
+repository. The distinction is not cosmetic: this project exists to be able to say
+where a word list came from, and a licence that overclaimed would undo that.
+
+APACHE-2.0 — the code and the documentation
+
+  build.mjs, sources.mjs, harvest.mjs, conform.mjs, saturation.mjs, weed.mjs,
+  check-dumps.mjs, collections.mjs, verify.mjs, and the Markdown that explains them.
+
+CC0-1.0 — the generated word list and the evidence behind it
+
+  words.txt
+  ATTESTATIONS.tsv
+  status.json, SATURATION.md, COLLECTIONS.md, searched.tsv
+
+  These are Blinkered's own compilation and its working. A word ships because three
+  independent collections of text were found to contain it, and the record of which
+  collections and where in them is a statement of fact about those texts rather than a
+  copy of them. Nothing a licence governs was taken from the dictionaries that proposed
+  the candidates, which is the whole point of the method. To the extent any right
+  subsists in the compilation, it is waived: CC0 1.0 Universal.
+  https://creativecommons.org/publicdomain/zero/1.0/
+
+NOT OURS TO LICENSE — the words we could not prove
+
+  dropped.tsv
+
+  Every other file here rests on evidence we gathered. This one does not: it is the
+  candidates that failed, and a candidate that failed is a word we have nothing to say
+  about except that somebody's dictionary proposed it. That makes the file a subset of
+  that dictionary, and it carries that dictionary's terms rather than ours:
+
+      CC-BY-SA-4.0
+
+  See blinkered-attestation/candidates/ja/LICENSE and PROVENANCE.md for what was
+  relied on and why. Redistributing dropped.tsv must satisfy those terms. Neither
+  Apache-2.0 nor CC0 above applies to it, and neither can be made to apply to it by us.
