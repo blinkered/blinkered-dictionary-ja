@@ -46,6 +46,32 @@ const candidates = new Set(
     .filter(Boolean)
     .map((line) => line.split('\t')[0]),
 )
+// The candidate list is somebody else's dictionary, and it has to stay somebody else's. If
+// `blinkered` borrows its word lists back from these repositories, this path fills with our own
+// output: every candidate is a word already proved, coverage reads 100%, the drop list empties,
+// and nothing fails. That is the one fault this build cannot survive quietly, because every
+// number it reports would still look right. So it refuses instead of reporting.
+const SHIPPED = new URL('words.txt', import.meta.url).pathname
+if (existsSync(SHIPPED)) {
+  const shipped = new Set(
+    readFileSync(SHIPPED, 'utf8')
+      .split('\n')
+      .slice(1)
+      .filter(Boolean)
+      .map((line) => line.split('\t')[0]),
+  )
+  if (
+    shipped.size > 0 &&
+    shipped.size === candidates.size &&
+    [...shipped].every((word) => candidates.has(word))
+  ) {
+    throw new Error(
+      `the candidates at ${CANDIDATES} are this repository's own words.txt — ` +
+        'a list cannot be its own evidence. Point CANDIDATES at the borrowed list.',
+    )
+  }
+}
+
 const fold = alphabetFor(LANGUAGE).fold
 process.stderr.write(`${LANGUAGE}: ${candidates.size} candidates\n`)
 
