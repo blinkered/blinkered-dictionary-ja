@@ -15,7 +15,7 @@ collection rather than reuse its record only has to put the file back where the 
 | `wiki:ja` | 127,281,526 |  | — |
 | `fw2` | 74,903,591 |  | — |
 | `wikisource:ja` | 18,975,874 |  | — |
-| `ia` | 13,204,546 | Internet Archive japanese books — literature, and the register a newspaper never reaches | [archive-ja](https://archive.org/details/booksbylanguage_japanese) |
+| `ia` | 18,880,600 | Internet Archive japanese books — literature, and the register a newspaper never reaches | [archive-ja](https://archive.org/details/booksbylanguage_japanese) |
 | `tat` | 700,133 |  | — |
 | `gut` | 284,902 |  | — |
 | `web:yomiuri.co.jp` | 208,901 |  | fetched from `yomiuri.co.jp`, recorded in `searched.tsv` |
