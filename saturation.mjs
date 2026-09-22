@@ -124,7 +124,13 @@ writeFileSync(
       built: evidence.built,
       candidates: total,
       shipped,
-      ships: blessing.ships === true,
+      // Three states, not two. `false` used to mean both "we looked and said no" and "nobody has
+      // looked yet", and those are different facts: the first is a decision with a reason, the
+      // second is work not done. Japanese is held; a language built an hour ago is pending.
+      //
+      // Anything unrecognised reads as 'pending', because the one thing this must never do is
+      // promote a language nobody blessed.
+      ships: blessing.ships === true ? true : blessing.ships === false ? false : 'pending',
       decided: blessing.decided ?? null,
       why: blessing.why ?? null,
       // What the shipped list is under. Carried forward like the blessing, for the same reason:
