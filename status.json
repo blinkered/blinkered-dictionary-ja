@@ -1,8 +1,8 @@
 {
   "language": "ja",
-  "built": "2026-09-21",
+  "built": "2026-09-22",
   "candidates": 191188,
-  "shipped": 40571,
+  "shipped": 40810,
   "ships": false,
   "decided": "2026-09-21",
   "why": "Held back. It clears the usability floor, so nothing mechanical would stop it; this is an editorial decision and that is the point of this file. Its reader cannot produce compound words at all — SudachiDict-small has no compound entries, so Sudachi's longest-unit mode has nothing to join — and Japanese vocabulary is largely compounds. More books will not fix it. The fix is measured and recorded in blinkered-attestation/STATUS.md and needs every Japanese collection read again.",
@@ -29,78 +29,78 @@
     {
       "families": 3,
       "added": "internetarchive",
-      "kept": 38710,
-      "share": 0.202471,
-      "gained": 38710
+      "kept": 39010,
+      "share": 0.20404,
+      "gained": 39010
     },
     {
       "families": 4,
       "added": "tatoeba",
-      "kept": 40037,
-      "share": 0.209412,
-      "gained": 1327
+      "kept": 40294,
+      "share": 0.210756,
+      "gained": 1284
     },
     {
       "families": 5,
       "added": "gutenberg",
-      "kept": 40547,
-      "share": 0.212079,
-      "gained": 510
+      "kept": 40786,
+      "share": 0.213329,
+      "gained": 492
     },
     {
       "families": 6,
       "added": "yomiuri.co.jp",
-      "kept": 40560,
-      "share": 0.212147,
+      "kept": 40799,
+      "share": 0.213397,
       "gained": 13
     },
     {
       "families": 7,
       "added": "hokkaido-np.co.jp",
-      "kept": 40567,
-      "share": 0.212184,
+      "kept": 40806,
+      "share": 0.213434,
       "gained": 7
     },
     {
       "families": 8,
       "added": "chunichi.co.jp",
-      "kept": 40570,
-      "share": 0.2122,
+      "kept": 40809,
+      "share": 0.21345,
       "gained": 3
     },
     {
       "families": 9,
       "added": "asahi.com",
-      "kept": 40571,
-      "share": 0.212205,
+      "kept": 40810,
+      "share": 0.213455,
       "gained": 1
     },
     {
       "families": 10,
       "added": "sankei.com",
-      "kept": 40571,
-      "share": 0.212205,
+      "kept": 40810,
+      "share": 0.213455,
       "gained": 0
     },
     {
       "families": 11,
       "added": "tokyo-np.co.jp",
-      "kept": 40571,
-      "share": 0.212205,
+      "kept": 40810,
+      "share": 0.213455,
       "gained": 0
     },
     {
       "families": 12,
       "added": "nikkei.com",
-      "kept": 40571,
-      "share": 0.212205,
+      "kept": 40810,
+      "share": 0.213455,
       "gained": 0
     },
     {
       "families": 13,
       "added": "mainichi.jp",
-      "kept": 40571,
-      "share": 0.212205,
+      "kept": 40810,
+      "share": 0.213455,
       "gained": 0
     }
   ]
